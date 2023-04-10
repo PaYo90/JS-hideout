@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edytor Visual Novel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="toolbar">
+            <button id="save">Zapisz</button>
+            <button id="import">Importuj zasoby</button>
+            <button id="export">Eksportuj grę</button>
+            <button id="undo">Cofnij</button>
+            <button id="redo">Ponów</button>
+            <button id="preview">Podgląd</button>
+        </nav>
+    </header>
+<!---
+<aside id="sidebar">
+	<button id="scenes">Dodaj scenę</button>
+	<div id="scene-properties" class="property-panel">
+    <h3>Właściwości sceny</h3>
+    <label for="scene-name">Nazwa sceny:</label>
+    <input type="text" id="scene-name" />
+    <label for="scene-background">Tło sceny:</label>
+    <input type="file" id="scene-bjackground" />
+    <button id="update-scene">Zaktualizuj scenę</button>
+	</div>
+    <ul>
+        <li><button id="scenes">Sceny</button></li>
+        <li><button id="characters">Postacie</button></li>
+        <li><button id="dialogues">Dialogi</button></li>
+        <li><button id="backgrounds">Tła</button></li>
+        <li><button id="music">Muzyka</button></li>
+        <li><button id="sound-effects">Efekty dźwiękowe</button></li>
+    </ul>
+
+</aside>--->
+<aside id="sidebar">
+	<button id="scenes">Dodaj scenę</button>
+	<div id="scene-properties" class="property-panel">
+        <h3>Właściwości sceny</h3>
+        <label for="scene-name">Nazwa sceny:</label>
+        <input type="text" id="scene-name" />
+        <label for="scene-background">Tło sceny:</label>
+        <input type="file" id="scene-background" />
+        <label for="scene-character">Postać:</label>
+        <select id="scene-character"></select>
+        <label for="scene-dialog">Dialog:</label>
+        <select id="scene-dialog"></select>
+        <label for="scene-music">Muzyka:</label>
+        <select id="scene-music"></select>
+        <label for="scene-sound-effect">Efekt dźwiękowy:</label>
+        <select id="scene-sound-effect"></select>
+        <button id="update-scene">Zaktualizuj scenę</button>
+	</div>
+</aside>
+
+
+
+<main id="workspace">
+    <div id="scene-container">
+        <!-- Tutaj będą umieszczane sceny, postacie, tła, itp. -->
+    </div>
+</main>
+
+    <section id="blueprints">
+        <!-- Wizualny edytor logiki gry -->
+    </section>
+
+    <section id="preview">
+        <!-- Podgląd gry -->
+    </section>
+
+    <section id="properties">
+        <div id="dialog-properties" class="property-panel">
+        <h3>Właściwości dialogu</h3>
+        <label for="dialog-text">Tekst dialogu:</label>
+        <textarea id="dialog-text"></textarea>
+        <button id="update-dialog">Zaktualizuj dialog</button>
+    </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
